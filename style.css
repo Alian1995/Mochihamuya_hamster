@@ -1,0 +1,196 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #4a2f1b, #5c3a21);
+  color: white;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+}
+
+.varian h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 15px;
+}
+
+/* LOGO */
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+/* NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+/* CONTENT */
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  line-height: 1.8;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.15);
+}
+
+.premium { border: 1px solid gold; }
+.medium { border: 1px solid silver; }
+.basic { border: 1px solid #ccc; }
+
+/* GAMBAR DI CARD */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* TESTIMONI */
+.testimoni {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* LOKASI */
+.lokasi {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.map-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: #8b5e3c;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.map-btn:hover {
+  background: #a9744f;
+}
+
+.social a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+}
+
+/* FLOATING WHATSAPP */
+.floating-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.floating-wa:hover {
+  transform: scale(1.1);
+}
